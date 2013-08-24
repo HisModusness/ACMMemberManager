@@ -23,7 +23,7 @@
                 <subviews>
                     <splitView dividerStyle="thin" vertical="YES" id="4dp-Zi-Yzg">
                         <rect key="frame" x="0.0" y="0.0" width="773" height="590"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <customView id="qoB-ke-SE3">
                                 <rect key="frame" x="0.0" y="0.0" width="193" height="590"/>
@@ -185,6 +185,9 @@
                             <real value="250"/>
                             <real value="250"/>
                         </holdingPriorities>
+                        <connections>
+                            <outlet property="delegate" destination="1Ta-Hu-Nka" id="tZ6-CD-uEK"/>
+                        </connections>
                     </splitView>
                 </subviews>
             </view>
@@ -208,6 +211,7 @@
             </connections>
         </window>
         <customObject id="-3" userLabel="Application"/>
+        <customObject id="1Ta-Hu-Nka" customClass="ACMSplitViewDelegate"/>
     </objects>
     <resources>
         <image name="NSActionTemplate" width="15" height="15"/>

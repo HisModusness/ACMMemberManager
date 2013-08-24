@@ -20,6 +20,7 @@
 		7209ADE117B09840008F7FC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7209ADBA17B09840008F7FC2 /* Cocoa.framework */; };
 		7209ADE917B09841008F7FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7209ADE717B09841008F7FC2 /* InfoPlist.strings */; };
 		7209ADEB17B09841008F7FC2 /* ACM_Member_ManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209ADEA17B09841008F7FC2 /* ACM_Member_ManagerTests.m */; };
+		729DF8A617C9662D00CDF391 /* ACMSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 729DF8A517C9662D00CDF391 /* ACMSplitViewDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		7209ADE617B09841008F7FC2 /* ACM Member ManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ACM Member ManagerTests-Info.plist"; sourceTree = "<group>"; };
 		7209ADE817B09841008F7FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7209ADEA17B09841008F7FC2 /* ACM_Member_ManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACM_Member_ManagerTests.m; sourceTree = "<group>"; };
+		729DF8A417C9662D00CDF391 /* ACMSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACMSplitViewDelegate.h; path = "ACM Member Manager/ACMSplitViewDelegate.h"; sourceTree = "<group>"; };
+		729DF8A517C9662D00CDF391 /* ACMSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACMSplitViewDelegate.m; path = "ACM Member Manager/ACMSplitViewDelegate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		7209ADC017B09840008F7FC2 /* ACM Member Manager */ = {
 			isa = PBXGroup;
 			children = (
+				729DF8A317C965EA00CDF391 /* Delegates */,
 				7209ADCC17B09840008F7FC2 /* ACMDocument.h */,
 				7209ADCD17B09840008F7FC2 /* ACMDocument.m */,
 				7209ADCF17B09840008F7FC2 /* ACMDocument.xib */,
@@ -158,6 +162,16 @@
 				7209ADE717B09841008F7FC2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		729DF8A317C965EA00CDF391 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				729DF8A417C9662D00CDF391 /* ACMSplitViewDelegate.h */,
+				729DF8A517C9662D00CDF391 /* ACMSplitViewDelegate.m */,
+			);
+			name = Delegates;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729DF8A617C9662D00CDF391 /* ACMSplitViewDelegate.m in Sources */,
 				7209ADD717B09840008F7FC2 /* ACMDocument.xcdatamodeld in Sources */,
 				7209ADCE17B09840008F7FC2 /* ACMDocument.m in Sources */,
 				7209ADC717B09840008F7FC2 /* main.m in Sources */,
@@ -485,6 +500,7 @@
 				7209ADF017B09841008F7FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7209ADF117B09841008F7FC2 /* Build configuration list for PBXNativeTarget "ACM Member ManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +509,7 @@
 				7209ADF317B09841008F7FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
